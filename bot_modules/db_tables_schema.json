@@ -1,0 +1,84 @@
+[
+    {
+        "table_name": "User",
+        "fields": [
+            {
+                "name": "id",
+                "type": "BIGINT(20)",
+                "is_null": false,
+                "is_pk": true,
+                "default": null
+            },
+            {
+                "name": "is_bot",
+                "type": "TINYINT(1)",
+                "is_null": true,
+                "is_pk": false,
+                "default": null
+            },
+            {
+                "name": "first_name",
+                "type": "VARCHAR(255)",
+                "is_null": true,
+                "is_pk": false,
+                "default": null
+            },
+            {
+                "name": "last_name",
+                "type": "VARCHAR(255)",
+                "is_null": true,
+                "is_pk": false,
+                "default": null
+            },
+            {
+                "name": "username",
+                "type": "VARCHAR(255)",
+                "is_null": true,
+                "is_pk": false,
+                "default": null
+            },
+            {
+                "name": "language_code",
+                "type": "VARCHAR(10)",
+                "is_null": true,
+                "is_pk": false,
+                "default": null
+            }
+        ]
+    },
+    {
+        "table_name": "Chat",
+        "fields": [
+            {
+                "name": "id",
+                "type": "BIGINT(20)",
+                "is_null": false,
+                "is_pk": true,
+                "default": null
+            },
+            {
+                "name": "title",
+                "type": "VARCHAR(255)",
+                "is_null": true,
+                "is_pk": false,
+                "default": null
+            },
+            {
+                "name": "type",
+                "type": "VARCHAR(20)",
+                "is_null": true,
+                "is_pk": false,
+                "default": null
+            },
+            {
+                "name": "all_members_are_administrators",
+                "type": "TINYINT(1)",
+                "is_null": true,
+                "is_pk": false,
+                "default": null
+            }
+        ],
+        "foreign_keys": ["update_id"],
+        "unique_keys": null
+    }
+]
