@@ -9,6 +9,7 @@ python-dotenv = "*"
 mysql-connector-python = "*"
 gunicorn = "*"
 unidecode = "*"
+openai = "*"
 
 [dev-packages]
 
